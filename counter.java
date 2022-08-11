@@ -21,11 +21,21 @@ class partialSum {
 public class counter {
     public static void main(String[] args) {
         partialSum value = new partialSum();
+
+        // test cases
         int n = 5;
         int[] a = { 2, 3, 1, -6, 8, -3, -1, 2 };
 
         int n2 = 20;
         int[] a2 = { 1, 2, -1, 5, 3, 2, -3 };
-        System.out.println("The partial sum is: " + value.nUpCount(a2, n2));
+
+        int n3 = 6;
+        int[] a3 = { 6, 3, 1 };
+
+        System.out.println("\nThe partial sum is: " + (value.nUpCount(a, 5) == 3));
+        System.out.println("The partial sum is: " + (value.nUpCount(a2, n2) == 0));
+        System.out.println(value.nUpCount(a3, 6));
+        System.out.println("The partial sum is: " + (value.nUpCount(a3, 6) == 1));
+
     }
 }
