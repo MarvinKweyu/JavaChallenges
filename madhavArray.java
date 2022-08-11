@@ -1,7 +1,7 @@
 public class madhavArray {
     public static void main(String[] args) {
         int[] myArray = { -6, -3, -3, 8, -5, -4 };
-        System.out.println("Check if madhav: " + isMadhavArray(myArray));
+        System.out.println("Result is 0 " + isMadhavArray(myArray));
     }
 
     private static int isMadhavArray(int[] a) {

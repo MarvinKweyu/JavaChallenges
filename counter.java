@@ -24,13 +24,14 @@ public class counter {
 
         // test cases
         int n = 5;
-        int[] a = { 2, 3, 1, -6, 8, -3, -1, 2 };
+        int[] a = { 2, 3, 1, -6, 8, -3, -1, 2 }; // result is 3
 
         int n2 = 20;
-        int[] a2 = { 1, 2, -1, 5, 3, 2, -3 };
+        int[] a2 = { 1, 2, -1, 5, 3, 2, -3 }; // result is 0
 
+        // ! fix: this fails
         int n3 = 6;
-        int[] a3 = { 6, 3, 1 };
+        int[] a3 = { 6, 3, 1 }; // result is 1
 
         System.out.println("\nThe partial sum is: " + (value.nUpCount(a, 5) == 3));
         System.out.println("The partial sum is: " + (value.nUpCount(a2, n2) == 0));
