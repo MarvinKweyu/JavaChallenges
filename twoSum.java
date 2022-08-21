@@ -56,7 +56,7 @@ public class twoSum {
     public static void main(String[] args) {
 
         Solution answer = new Solution();
-        int[] myArray = { 1, 1, 2 };
+        // int[] myArray = { 1, 1, 2 };
 
         // int result = answer.removeDuplicates(myArray);
 

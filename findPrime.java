@@ -4,7 +4,7 @@
 public class findPrime {
     public static void main(String[] args) {
 
-        int number = 21;
+        int number = 23;
 
         System.out.println("The number " + number + " is prime: " + isPrimeNumber(number));
     }

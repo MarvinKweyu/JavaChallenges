@@ -23,7 +23,7 @@ public class counter {
         partialSum value = new partialSum();
 
         // test cases
-        int n = 5;
+        // int n = 5;
         int[] a = { 2, 3, 1, -6, 8, -3, -1, 2 }; // result is 3
 
         int n2 = 20;
