@@ -43,9 +43,7 @@ public class findPorcupineNumberClass {
 
             // check if the next prime number found ends with 9
             if (isPrime(result)) {
-
                 foundPrime = true;
-
             }
         }
 
