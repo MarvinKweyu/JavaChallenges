@@ -1,4 +1,5 @@
 public class countSquarePairs {
+    // ToDo: Solve this challenge
     public static void main(String[] args) {
         // Pair<String, Integer> = new Pair("marvin", 10);
 
@@ -8,7 +9,6 @@ public class countSquarePairs {
         int countPairs = 0;
         int[] validValues = new int[a.length];
         int[][] validPairs = new int[validValues.length][2];
-        
 
         // array must have atleast 2 integers
         if (a.length < 2) {
