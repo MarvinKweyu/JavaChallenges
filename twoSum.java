@@ -15,7 +15,7 @@ import java.util.HashMap;
 class Solution {
 
     // no idea what I was doing here. I will fix this
-    // Todo: fix this strange method
+    // BUG: fix this strange method
     public int removeDuplicates(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == nums[i + 1]) {
