@@ -26,7 +26,7 @@ public class centered15Class {
             for (int num : newArray) {
                 sum += num;
             }
-            System.out.println("Sum is" + sum);
+
             if (sum == 15) {
                 isCentered = 1;
                 return 1;
