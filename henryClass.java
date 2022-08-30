@@ -40,7 +40,7 @@ public class henryClass {
             number++;
         }
 
-        System.out.println(sumOfI);
+        // System.out.println(sumOfI);
         return result;
     }
 }
