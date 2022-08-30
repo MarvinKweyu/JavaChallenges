@@ -20,6 +20,17 @@ public class centered15Class {
         int right = arrayLength - 1;
         int isCentered = 0;
 
+        // check for edge cases
+
+        if (arrayLength == 0) {
+            return 0;
+        }
+
+        if (arrayLength == 3 && a[1] == 15) {
+            return 1;
+
+        }
+
         while (left < right) {
             int[] newArray = Arrays.copyOfRange(a, left, right);
             int sum = 0;

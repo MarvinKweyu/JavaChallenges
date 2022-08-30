@@ -1,0 +1,35 @@
+public static int isCentered15(int[] a){
+
+        /*
+        *  example {3,2,10,4,1,6,9}
+        *
+        *  sum of consecutive will start might start at position 1 onwards
+        *
+        * */
+
+        int startIndex =1;
+
+        while (startIndex != a.length-2) {// in our case a.length == 7
+
+            int sum = 0;
+
+            for (int i = startIndex; i < a.length - 1; i++) {
+
+                sum = sum + a[i];
+
+                if (sum == 15) {
+
+                    if(a.length-i-1 == startIndex) {//checking whether the sequence is preceded by same number of elements
+
+                        return 1;
+
+                    }
+                }
+            }
+            
+            startIndex ++;
+
+        }
+        return 0;
+
+    }

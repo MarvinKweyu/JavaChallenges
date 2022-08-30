@@ -1,14 +1,25 @@
 public class isCentered15Revision {
 
     public static void main(String args[]) {
-        // int[] myArray = { 2, 10, 4, 1, 6, 9 };
-        int[] mySecondArray = { 0, 10, 9, 8, 1, 15, 14, 1, 7, 10 };
-        System.out.println("the array is centered: " + isCentered15(mySecondArray));
+        int[] myArray = { 15 };
+        // int[] mySecondArray = { 0, 10, 9, 8, 1, 15, 14, 1, 7, 10 };
+        System.out.println("the array is centered: " + isCentered15(myArray));
 
     }
 
     public static int isCentered15(int[] a) {
+        int arrayLength = a.length;
+
         int startIndex = 1;
+        // check for edge cases
+        if (arrayLength == 0) {
+            return 0;
+        }
+
+        if (arrayLength == 3 && a[1] == 15) {
+            return 1;
+
+        }
 
         while (startIndex != a.length - 2) {// in our case a.length == 7
 
