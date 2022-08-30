@@ -7,6 +7,7 @@
 // and 6 + 496 = 502.
 public class henryClass {
     public static void main(String args[]) {
+        System.out.println("The result is: " + henry(60, 3));
 
     }
 
@@ -14,20 +15,36 @@ public class henryClass {
         int result = 0;
 
         // find factor of a number
-        for(int item = 0; item < 60; item++){
-            if(60 % item == 0){
-                
-            }
-        }
+        // for (int item = 0; item < 60; item++) {
+        // if (60 % item == 0) {
+
+        // }
+        // }
         // find ith factor
         int count = 0;
-        int factori = 0;
-        while (i <= count) {
+        int factorOfI = 0;
+        int number = 2;
+        while (count <= i) {
             if (count == i) {
-                return factori;
+                break;
+            }
+            
+            for (int item = 1; item < number; item++) {
+                
+                if (number % item == 0) {
+                    int sumOfI = 0;
+                    System.out.println("Factor  found: " + item);
+                    // item is a factor
+                    if (item != number) {
+                        sumOfI += item;
+                    }
+                }
             }
             count++;
+            number++;
         }
+
+        System.out.println(sumOfI);
         return result;
     }
 }
