@@ -9,28 +9,21 @@
 
 //* */ Source: // https://leetcode.com/problems/two-sum/
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 class Solution {
 
-    // no idea what I was doing here. I will fix this
-    // BUG: fix this strange method
     public int removeDuplicates(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == nums[i + 1]) {
-                nums[i += 1] = 1000;
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[j] == nums[i]) {
+                continue;
             }
-        }
-        Arrays.sort(nums);
-        int length = 0;
-        for (int number : nums) {
-            if (number != 1000) {
-                length += 1;
-            }
-        }
-        return length;
 
+            nums[++i] = nums[j];
+
+        }
+        return i + 1;
     }
 
     public int[] twoSum(int[] nums, int target) {
