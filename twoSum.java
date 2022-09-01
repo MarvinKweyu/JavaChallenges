@@ -14,16 +14,13 @@ import java.util.HashMap;
 class Solution {
 
     public int removeDuplicates(int[] nums) {
-        int i = 0;
-        for (int j = 1; j < nums.length; j++) {
-            if (nums[j] == nums[i]) {
-                continue;
+        int index = 1;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] != nums[i + 1]) {
+                nums[index++] = nums[i + 1];
             }
-
-            nums[++i] = nums[j];
-
         }
-        return i + 1;
+        return index;
     }
 
     public int[] twoSum(int[] nums, int target) {
@@ -49,9 +46,11 @@ public class twoSum {
     public static void main(String[] args) {
 
         Solution answer = new Solution();
-        // int[] myArray = { 1, 1, 2 };
+        int[] myArray = { 1, 1, 2 };
 
-        // int result = answer.removeDuplicates(myArray);
+        int result = answer.removeDuplicates(myArray);
+
+        System.out.println("Result: " + result);
 
         int[] nums = { 2, 7, 11, 15 };
         int target = 9;

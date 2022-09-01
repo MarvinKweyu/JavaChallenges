@@ -15,7 +15,7 @@ public class nUniqueClass {
     public static void main(String args[]) {
 
         int[] myArray = { 7, 3, 3, 2, 4 };
-        System.out.println("Check if array is n-unique: " + isNUnique(myArray, 6));
+        System.out.println("Check if array is n-unique: " + isNUnique(myArray, 11));
 
     }
 
@@ -24,28 +24,17 @@ public class nUniqueClass {
         if (a.length < 2) {
             return 0;
         }
-
-        int left = 0;
-        int right = a.length - 1;
-        int numberOfSumPairs = 0;
-        while (left < right) {
-
-            System.out.println(a[left] + a[right]);
-
-            if (a[left] + a[right] == n) {
-                System.out.println("The navalue of n:" + n);
-                System.out.println("Target achieved at index: " + left + "and " + right);
-                numberOfSumPairs += 1;
-            }
-
-            if (a[left] + a[right] < n) {
-                left++;
-            } else {
-                right--;
-            }
-
-            if (numberOfSumPairs > 1) {
+        int pairCount = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (pairCount > 1) {
                 return 0;
+
+            }
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] + a[j] == n) {
+                    pairCount += 1;
+                }
+
             }
         }
 
