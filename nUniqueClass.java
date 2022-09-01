@@ -28,7 +28,6 @@ public class nUniqueClass {
         for (int i = 0; i < a.length; i++) {
             if (pairCount > 1) {
                 return 0;
-
             }
             for (int j = i + 1; j < a.length; j++) {
                 if (a[i] + a[j] == n) {

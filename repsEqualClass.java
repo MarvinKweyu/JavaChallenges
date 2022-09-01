@@ -4,11 +4,9 @@
 
 // where len is the number of elements in the array.
 
-
-
 public class repsEqualClass {
     public static void main(String args[]) {
-        int[] myArray = { 3, 2, 0, 5 };
+        int[] myArray = { 3, 2, 0, 5, 3 };
         int myNumber = 32053;
 
         System.out.println("repsEqual: " + repsEqual(myArray, 5, myNumber));
@@ -17,7 +15,6 @@ public class repsEqualClass {
 
     public static int repsEqual(int a[], int len, int n) {
 
-        int result = 1;
         char[] integerChars = Integer.toString(n).toCharArray();
 
         // check if they are the same length
@@ -26,16 +23,21 @@ public class repsEqualClass {
         }
 
         for (int i = 0; i < len; i++) {
-            for (int j = 0; j < integerChars.length; j++) {
-                // BUG fails to compare at comparison
-                if (Integer.toString(a[i]) != Character.toString(integerChars[j])) {
-                    return 0;
-                }
+
+            // * thought: characters are identified differently within conversion. Nota Rust
+            // unicode conversion
+            // if (Integer.toString(a[i]) != Character.toString(integerChars[j])) {
+            // return 0;
+            // }
+
+            if (a[i] != Character.getNumericValue(integerChars[i])) {
+
+                return 0;
             }
 
         }
 
-        return result;
+        return 1;
 
     }
 }
