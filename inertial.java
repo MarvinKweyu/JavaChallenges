@@ -21,6 +21,8 @@ public class inertial {
             if (a[i] % 2 == 0) {
                 evenValues[i] = a[i];
             } else {
+                // BUG: 0 is identified as an odd number here yet it is not part of the array
+                System.out.println("Odd value: " + a[i]);
                 oddValues[i] = a[i];
                 hasOddNum = true;
             }
@@ -41,10 +43,6 @@ public class inertial {
         for (int k = 0; k < oddValues.length; k++) {
             for (int j = 0; j < evenValues.length; j++) {
                 if (oddValues[k] < evenValues[j] && evenValues[j] != largestNo) {
-                    System.out.println("checking other values");
-                    System.out.println("Odd value; " + oddValues[k]);
-                    System.out.println("Even value value; " + evenValues[j]);
-                    System.out.println("Largest number: " + largestNo);
                     return 0;
                 }
             }

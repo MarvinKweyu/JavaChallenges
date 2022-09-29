@@ -2,6 +2,8 @@
 // We return 0 for all numbers in hte negative range
 // we then get the square root of the number using the inbuilt fn and cast it to an integer, which converts the float to integer in the event it is one
 // we then get the square of the number 
+
+// ToDo: append the question as a comment 
 class nextPerfectSquare {
     int isPerfectSquare(int n) {
         if (n < 0) {

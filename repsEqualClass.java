@@ -30,6 +30,11 @@ public class repsEqualClass {
             // return 0;
             // }
 
+            // solution to above
+            if (!Integer.toString(a[i]).equals(Character.toString(integerChars[i]))) {
+                return 0;
+            }
+
             if (a[i] != Character.getNumericValue(integerChars[i])) {
 
                 return 0;
