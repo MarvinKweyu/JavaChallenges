@@ -27,5 +27,3 @@ public class binarySearch {
         return -1;
     }
 }
-
-O(n), O(1), O(n2)

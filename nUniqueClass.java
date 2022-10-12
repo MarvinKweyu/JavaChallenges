@@ -29,6 +29,8 @@ public class nUniqueClass {
             if (pairCount > 1) {
                 return 0;
             }
+            // ToDo: I don't remember what I was doing here
+            // ? what about elements not in consecutive order
             for (int j = i + 1; j < a.length; j++) {
                 if (a[i] + a[j] == n) {
                     pairCount += 1;
