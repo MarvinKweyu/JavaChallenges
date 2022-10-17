@@ -6,32 +6,8 @@
 public class squareRoot {
 
     public static void main(String[] args) {
-        // * thought , find the number using a binary search
+        // ? thought , find the number using a binary search
         System.out.println("the square root of 9 is: " + findRoot(25));
-
-    }
-
-    public static int binarySearch(int number) {
-        int right = 0;
-        int left = number;
-        int result = 0;
-
-        while (left < right) {
-
-            int middle = (left + right) / 2;
-
-            if (middle * middle == number) {
-                return middle;
-            }
-
-            if (middle * middle > number) {
-                right = middle - 1;
-            } else {
-                left = middle + 1;
-            }
-        }
-
-        return result;
 
     }
 
