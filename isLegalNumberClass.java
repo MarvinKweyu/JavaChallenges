@@ -43,6 +43,7 @@ public class isLegalNumberClass {
      * question write a method named convertToBase10 that
      * converts its <array, base> arguments to a base 10 number if the input is
      * legal for the specified base. If it is not, it returns -1
+     * BUG: fails to return valid value @aim-akonya
      */
     public static int convertToBase10(int[] a, int base) {
         if (islegalNumber(a, base) == 0) {
