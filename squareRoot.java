@@ -36,7 +36,7 @@ public class squareRoot {
     }
 
     public static int findRoot(int num) {
-        // Newton's method
+
         // ToDo: find the the absolute value without abs
         // compare = (compare <= 0.0F) ? 0.0F - compare : compare;
         // float compare = (float) guess * guess - num;
@@ -51,12 +51,12 @@ public class squareRoot {
 
     public static double findRoot2(int number) {
         // Proceeding to find out square root of the number
-        double g1;
+        double guess;
         double squareRoot = number / 2;
         do {
-            g1 = squareRoot;
-            squareRoot = (g1 + (number / g1)) / 2; // Newton's method
-        } while ((g1 - squareRoot) != 0);
+            guess = squareRoot;
+            squareRoot = (guess + (number / guess)) / 2; // Newton's method
+        } while ((guess - squareRoot) != 0);
 
         return squareRoot;
 
