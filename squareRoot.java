@@ -6,38 +6,14 @@
 public class squareRoot {
 
     public static void main(String[] args) {
-        // * thought , find the number using a binary search
+        // ? thought , find the number using a binary search
         System.out.println("the square root of 9 is: " + findRoot(25));
         System.out.println("The power of: " + power_value(3, 2));
 
     }
 
-    public static int binarySearch(int number) {
-        int right = 0;
-        int left = number;
-        int result = 0;
-
-        while (left < right) {
-
-            int middle = (left + right) / 2;
-
-            if (middle * middle == number) {
-                return middle;
-            }
-
-            if (middle * middle > number) {
-                right = middle - 1;
-            } else {
-                left = middle + 1;
-            }
-        }
-
-        return result;
-
-    }
-
     public static int findRoot(int num) {
-        // Newton's method
+
         // ToDo: find the the absolute value without abs
         // compare = (compare <= 0.0F) ? 0.0F - compare : compare;
         // float compare = (float) guess * guess - num;
