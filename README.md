@@ -1,5 +1,5 @@
 # JavaRocks
 
-> A series of Java challenges based on the attached document
+![OpenJDK](https://img.shields.io/badge/OpenJDK-17.0.3-green?style=flat)
+> A series of Java challenges. Algorithms lived by.
 
-*Programs not part of the challenge have been noted as so in the first line of the program as well as the likely source*
